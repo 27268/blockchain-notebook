@@ -1,6 +1,6 @@
 # Ethereum
 
-## Ethereum理论
+账户余额模型，ethereum1.0 抗ASIC的工作量证明，ethereum2.0 POS
 
 ## EthereumJ源码解析
 
@@ -12,6 +12,10 @@ TransactionExecutor.call\(\) -&gt;
 TransactionExecutor.create\(\) -&gt;  
         Repository.createAccount\(\)  
 
+
+
+
+## 账户余额模型
 
 
 
