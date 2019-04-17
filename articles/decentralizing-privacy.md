@@ -2,11 +2,13 @@
 description: 2015 IEEE CS Security and Privacy Workshops
 ---
 
-# Decentralizing Privacy: Using blockchain to ProtectPersonal Data
+# Decentralizing Privacy: Using blockchain to Protect Personal Data
+
+{% embed url="https://ieeexplore.ieee.org/document/7163223" %}
 
 要点总结：  
 核心是数据授权，数据授权工作通过区块链事务完成。  
-数据授权的核心是\(user, service\)实体，生成该实体所需的交互在安全信道中完成。
+数据授权的核心是\(user, service\)实体和数据访问策略，生成该实体所需的交互在安全信道中完成。
 
 ## 简介
 

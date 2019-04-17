@@ -20,5 +20,5 @@ description: 目录
 
 {% page-ref page="articles/dlattice.md" %}
 
-
+{% page-ref page="articles/decentralizing-privacy.md" %}
 
