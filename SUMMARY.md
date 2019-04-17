@@ -13,4 +13,5 @@
 ## 论文
 
 * [DLattice: a permission-less blockchain based on DPOS-BA-DAG consensus for data](articles/dlattice.md)
+* [Decentralizing Privacy: Using blockchain to ProtectPersonal Data](articles/decentralizing-privacy-using-blockchain-to-protectpersonal-data.md)
 
