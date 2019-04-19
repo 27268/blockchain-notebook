@@ -22,3 +22,7 @@ description: 目录
 
 {% page-ref page="articles/decentralizing-privacy.md" %}
 
+{% page-ref page="articles/mobile-blockchain.md" %}
+
+{% page-ref page="articles/pdm-framework.md" %}
+

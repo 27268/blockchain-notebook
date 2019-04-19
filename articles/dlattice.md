@@ -59,7 +59,7 @@ description: IEEE access 2019
 * DLattice：Node-DAG consists of account-dag and genesis header.
   * account-dag 以MPT的形式组织在Node-dag中，账户公钥作为key, value= T-chain + D-Tree\(红黑树 保存TBdata\)
 
-![account-dag](../.gitbook/assets/image%20%2820%29.png)
+![account-dag](../.gitbook/assets/image%20%2822%29.png)
 
 Spending指的是所有的\(共识\)节点都已收到该交易，Sreceived: receiver has received the currency or the data, and consturcted the coresponding TBreceive or TBdeal.
 

@@ -75,9 +75,9 @@ M\(X\) - mobile node, X in {A, B, C, D, E}, S\(Y\) - service node, Y in {F, G, H
   * 数据库：嵌入式JSON数据库 Coushbase Lite，适用于实时系统
   * Coushbase Sync Gateway
 
-![account&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2819%29.png)
+![account&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2821%29.png)
 
-![transaction&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2814%29.png)
+![transaction&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2816%29.png)
 
 ![block&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%282%29.png)
 
