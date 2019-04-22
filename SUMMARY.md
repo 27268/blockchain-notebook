@@ -17,4 +17,5 @@
 * [Performance Analysis and Application of Mobile Blockchain](articles/mobile-blockchain.md)
 * [A Framework for personal data protection in the IOT](articles/pdm-framework.md)
 * [ipShield - A framework for enforcing context-aware privacy](articles/ipshield.md)
+* [Monoxide](articles/monoxide.md)
 

@@ -165,3 +165,7 @@ Freedom epoch：Candidate-seed需要计算符合要求的hash，才能计算cons
 
 应用展望：tokenization of medical data and IOT data.
 
+
+
+说明：图片来自论文
+

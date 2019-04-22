@@ -101,3 +101,5 @@ Blockchain：防篡改、节点之间无信任
 
 ![&#x8282;&#x70B9;n&#x5728;block i&#x4E2D;&#x7684;&#x53EF;&#x4FE1;&#x5EA6;](../.gitbook/assets/image%20%2814%29.png)
 
+说明：图片来自论文
+

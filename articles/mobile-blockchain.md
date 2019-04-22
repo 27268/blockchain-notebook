@@ -104,3 +104,5 @@ M\(X\) - mobile node, X in {A, B, C, D, E}, S\(Y\) - service node, Y in {F, G, H
 
 
 
+说明：图片来自论文
+
