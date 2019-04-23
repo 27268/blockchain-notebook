@@ -18,4 +18,5 @@
 * [A Framework for personal data protection in the IOT](articles/pdm-framework.md)
 * [ipShield - A framework for enforcing context-aware privacy](articles/ipshield.md)
 * [Monoxide](articles/monoxide.md)
+* [Distributed resource allocation in blockchain-based video streaming systems with Mobile EC](articles/blockchain-based-vedio-streaming-system.md)
 
