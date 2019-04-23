@@ -10,7 +10,7 @@ description: >-
 
 要点总结：
 
-
+传感器的权限控制
 
 #### 立题依据：
 
@@ -53,11 +53,15 @@ inference privacy attack与side-channel attack的区别：
 
 #### 相关工作
 
-![&#x76F8;&#x5173;&#x5DE5;&#x4F5C;](../.gitbook/assets/image%20%2811%29.png)
+![&#x76F8;&#x5173;&#x5DE5;&#x4F5C;](../.gitbook/assets/image%20%2814%29.png)
 
 #### android的传感器数据流路径和安全模型
 
-![android &#x4F20;&#x611F;&#x5668;&#x6570;&#x636E;&#x6D41;&#x6A21;&#x578B;](../.gitbook/assets/image%20%2813%29.png)
+![android &#x4F20;&#x611F;&#x5668;&#x6570;&#x636E;&#x6D41;&#x6A21;&#x578B;](../.gitbook/assets/image%20%2817%29.png)
+
+数据流：
+
+SensorService, LocationManagerService在Android系统boot时启动的系统服务。
 
 安全模型：
 
@@ -66,4 +70,98 @@ inference privacy attack与side-channel attack的区别：
 * access control using Manifest
 
 ## 架构设计
+
+设计目标：
+
+* better monitoring of sensor access
+* meaningful privacy abstraction
+* privacy rule recommendation 
+* fine-grained control over shared data
+
+### 系统模块
+
+![ipShield &#x6570;&#x636E;&#x6D41;](../.gitbook/assets/image%20%2810%29.png)
+
+* 数据库
+  * sensor counter and database \(F\): 操作系统监控应用访问传感器的次数，安装新应用或者卸载应用时，更新数据库。
+  * **inference database \(E\)** : map the list of **inference categories** and their labels. Inference categories can be predicted using a combination of sensors, the prediction accuracy and the ML algorithm. —— 与杀毒软件公司维护的病毒库类似
+
+![inference DB](../.gitbook/assets/image%20%2816%29.png)
+
+* 上下文引擎 context engine \(D\) : 一组机器学习算法，将原始传感器数据作为输入，output the current context label. context label 与 inference label相同，区别在于：inference label是对手通过shared data推理得到的。用户可以通过配置privacy rules 触发context label.
+* firewall-manager: 与用户交互，并生成privacy rules。
+  * semantic firewall configurator \(G\)
+    * 输入：app访问的传感器，从inference DB中查询的可能的inference category
+    * 输出：根据inference category 配置的白名单和disjoint blacklist
+  * direct firewall configurator \(I\): 允许用户配置fine-grained context-aware rules.
+  * rule recommender \(H\)
+    * 输入：the user's privacy preference \(以上述白名单和黑名单的形式\)
+    * 输出：the actual privacy actions on the sensors \(Normal正常, Suppress禁止\) -&gt; provide user with flexibility to override them\(允许/禁止\).
+  * configurator switcher \(J\): 允许用户在语义模式和直接配置模式之间切换配置规则
+  * 由J 决定I or G 作为 H 的输入，生成recommending sensor combination，输出向量表示应该启用或者禁用哪些传感器
+* rule-based Obfuscator 基于规则的混淆器：实现了不同的隐私操作。根据privacy rules, sensor data, app，apply the appropriate rules to the data before releasing them.
+
+### 隐私规则分类
+
+隐私规则的组成部分：
+
+* context
+* SensorType
+* Action
+
+![&#x9690;&#x79C1;&#x89C4;&#x5219;&#x7684;&#x9009;&#x9879;&#x5217;&#x8868;](../.gitbook/assets/image%20%2821%29.png)
+
+隐私规则的一般形式：if\(contexts\), apply Action to SensorType.  
+eg：if \( \(TimeOfDay in \[10am-5pm\]\) ^ \(Place = school\) ^ \(AppName = facebook\) \), apply 'Suppress' on 'GPS'.
+
+* Normal action: release data without any changes.
+* Suppress action: the app is unable to detect any sensor event.
+* Constant action: replace actual data with a constant value.
+* Perturb action: add noise to sensor data
+* Play-back: suppress the data from the actual sensor hardware, 将合成的传感器测量数据聪外部服务发送到请求程序
+
+### 规则推荐
+
+目标：inference labels in the whitelist are allowed, in the blacklist are blocked.  
+输入：whitelist and blacklist of the inference categories  
+输出：a configuration for enabling or blocking of sensors accessed by an app.
+
+#### 问题格式化
+
+记N为app使用的传感器数量 \(get from Sensor Counter\), 传感器向量 s=\[s1, s2, ... sN\], 其中si表示第 i 个传感器的状态 \( 0 - 禁用，1 - 允许 \)。用 L={ l1, l2, ... lL } 表示interface categories.
+
+定义映射 M: {0,1}^N \* L -&gt; \[0, 1\]，M\(s, l\)=0 表明不存在学习算法 that **use the data stream** from the sensors enabled in s, and **infer a label** in category l，M\(s, l\)=1表示能完全推断出来。学习算法不受限制。
+
+映射 M 可以从 inference DB 中获得。学习算法work on features extracted from raw sensor data。由于sensor data 是可以共享的，所以任何特征都可以从原始数据中提取出来。
+
+记 pl in {0, ... , Pmax} 为用户设置的优先级，pl越大，优先级越高，用户越不希望被泄漏
+
+![&#x4F18;&#x5316;&#x95EE;&#x9898;](../.gitbook/assets/image%20%2824%29.png)
+
+s.t. 使得，满足 such that, or subjective to。
+
+穷举可能的状态空间s，找能使公式1取最大值的s，
+
+#### example
+
+L = {transportation mode, location, onscreen taps},   
+其中，W = { transportation mode }, B = {location, onscreen taps }  
+若用户设置的优先级为 p1 = {10, 4, 10}，即p\(transportation mode\)=10, p\(location\)=4, p\(onscreen taps\)=10
+
+选能使如下式子最大化的sensor combination：  
+M\(GPS+Acc+Gyro, transportation mode\) \* 2^\(10\) -  M\(GPS+Acc+Gyro, location, onscreen taps\) \* 2^\(4, 10\),  
+ 
+
+## 系统实施与评估
+
+![&#x7CFB;&#x7EDF;&#x5B9E;&#x65BD;](../.gitbook/assets/image%20%283%29.png)
+
+信任模型：第三方应用不可信，但第三方应用之间不会互相共享信息；linux内核与内核实现在沙箱中的应用可信；操作系统库与系统服务运行在应用沙箱中，也可信。
+
+代码实现：
+
+* Sensor counter：file
+* Inference：提供接口给人们贡献inference category
+* context engine：需要访问传感器原始数据——（HAL -&gt; context engine -&gt; Sensor Service），对访问速度有要求
+* FirewallManager
 

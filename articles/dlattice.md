@@ -59,7 +59,7 @@ description: IEEE access 2019
 * DLattice：Node-DAG consists of account-dag and genesis header.
   * account-dag 以MPT的形式组织在Node-dag中，账户公钥作为key, value= T-chain + D-Tree\(红黑树 保存TBdata\)
 
-![account-dag](../.gitbook/assets/image%20%2822%29.png)
+![account-dag](../.gitbook/assets/image%20%2828%29.png)
 
 Spending指的是所有的\(共识\)节点都已收到该交易，Sreceived: receiver has received the currency or the data, and consturcted the coresponding TBreceive or TBdeal.
 
@@ -107,11 +107,11 @@ Data owner授权其他账号other访问数据：需要other的公钥，用于对
 
 ### fork observation
 
-![&#x5206;&#x53C9;&#x7684;&#x5B9A;&#x4E49;](../.gitbook/assets/image%20%285%29.png)
+![&#x5206;&#x53C9;&#x7684;&#x5B9A;&#x4E49;](../.gitbook/assets/image%20%286%29.png)
 
 若有节点（记为Candidate-seed ）发现分叉，执行共识算法，确定有效的TB，
 
-![&#x5171;&#x8BC6;&#x7B97;&#x6CD5;&#x7684;&#x6267;&#x884C;&#x8FC7;&#x7A0B;](../.gitbook/assets/image%20%286%29.png)
+![&#x5171;&#x8BC6;&#x7B97;&#x6CD5;&#x7684;&#x6267;&#x884C;&#x8FC7;&#x7A0B;](../.gitbook/assets/image%20%287%29.png)
 
 ### consensus indentity setup
 
@@ -129,7 +129,7 @@ Freedom epoch：Candidate-seed需要计算符合要求的hash，才能计算cons
 
 ### consensus
 
-![&#x5171;&#x8BC6;&#x7B97;&#x6CD5;](../.gitbook/assets/image%20%283%29.png)
+![&#x5171;&#x8BC6;&#x7B97;&#x6CD5;](../.gitbook/assets/image%20%284%29.png)
 
 共识阶段包含两个子阶段
 
