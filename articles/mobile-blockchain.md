@@ -38,7 +38,7 @@ A new mobile commerce application using blockchain technology - MobiChain.
 
 ## 系统模型及评估
 
-![MobiChain&#x7CFB;&#x7EDF;&#x6A21;&#x578B;](../.gitbook/assets/image%20%285%29.png)
+![MobiChain&#x7CFB;&#x7EDF;&#x6A21;&#x578B;](../.gitbook/assets/image%20%287%29.png)
 
 ### 角色
 
@@ -56,7 +56,7 @@ M\(X\) - mobile node, X in {A, B, C, D, E}, S\(Y\) - service node, Y in {F, G, H
 3. S\(F\)中的同步网关将transaction广播到网络中的所有在线节点，即M\(B\), M\(C\), M\(D\).
 4. M\(E\)重新上线后，首先更新和同步当前区块链和pending tasks.
 
-![mining process](../.gitbook/assets/image%20%288%29.png)
+![mining process](../.gitbook/assets/image%20%2812%29.png)
 
 ### 挖矿过程
 
@@ -75,11 +75,11 @@ M\(X\) - mobile node, X in {A, B, C, D, E}, S\(Y\) - service node, Y in {F, G, H
   * 数据库：嵌入式JSON数据库 Coushbase Lite，适用于实时系统
   * Coushbase Sync Gateway
 
-![account&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2827%29.png)
+![account&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2834%29.png)
 
-![transaction&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2820%29.png)
+![transaction&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2827%29.png)
 
-![block&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%282%29.png)
+![block&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%283%29.png)
 
 * Main function
   * 当节点创建交易时，调用Main Function创建交易，并将该交易保存的当前节点的backlog中

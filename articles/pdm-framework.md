@@ -57,7 +57,7 @@ Personal Data Manager - PDM，其中包含一个应用程序，用来 为用户 
 
 体系结构：物联网设备的信息都上传到PDM；在授权第三方应用访问数据之前，PDM检查应用的访问策略与用户的隐私设置是否一致，AID-S计算所请求数据的inference risk。
 
-![&#x6A21;&#x5757;&#x529F;&#x80FD;](../.gitbook/assets/image%20%2819%29.png)
+![&#x6A21;&#x5757;&#x529F;&#x80FD;](../.gitbook/assets/image%20%2826%29.png)
 
 ### PDM
 
@@ -118,7 +118,7 @@ the reference risk is not a absolute value, it is related to the user's percepti
 
 #### inference risk estimation
 
-![inference matric](../.gitbook/assets/image%20%2812%29.png)
+![inference matric](../.gitbook/assets/image%20%2817%29.png)
 
 D: user data set, P\(D\): D的幂集， ai: element in D, ci: subset of D, element in P\(D\),  
 P\(ai\|ci\) in \[0, 1\]
@@ -132,7 +132,7 @@ P\(ai\|ci\) in \[0, 1\]
 
 ### 工作流程
 
-![&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;](../.gitbook/assets/image%20%2823%29.png)
+![&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;](../.gitbook/assets/image%20%2830%29.png)
 
 1. 初始化：从PDM收到第三方应用的policy statement开始。 -》PDM检查第三方所需的个人数据，向AID-S发送推理检查请求（以及user profile） -》AID-S根据user profile计算preference and threshold -》
 2. 实时监控
