@@ -18,6 +18,8 @@ description: 目录
 
 ## 论文笔记
 
+{% page-ref page="articles/monoxide.md" %}
+
 {% page-ref page="articles/dlattice.md" %}
 
 {% page-ref page="articles/decentralizing-privacy.md" %}
@@ -27,8 +29,6 @@ description: 目录
 {% page-ref page="articles/pdm-framework.md" %}
 
 {% page-ref page="articles/ipshield.md" %}
-
-{% page-ref page="articles/monoxide.md" %}
 
 {% page-ref page="articles/blockchain-based-vedio-streaming-system.md" %}
 

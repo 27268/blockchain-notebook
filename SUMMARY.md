@@ -12,11 +12,11 @@
 
 ## 论文
 
+* [Monoxide](articles/monoxide.md)
 * [DLattice: a permission-less blockchain based on DPOS-BA-DAG consensus for data](articles/dlattice.md)
 * [Decentralizing Privacy: Using blockchain to Protect Personal Data](articles/decentralizing-privacy.md)
 * [Performance Analysis and Application of Mobile Blockchain](articles/mobile-blockchain.md)
 * [A Framework for personal data protection in the IOT](articles/pdm-framework.md)
 * [ipShield - A framework for enforcing context-aware privacy](articles/ipshield.md)
-* [Monoxide](articles/monoxide.md)
-* [Distributed resource allocation in blockchain-based video streaming systems with Mobile EC](articles/blockchain-based-vedio-streaming-system.md)
+* [Distributed resource allocation in blockchain-based video streaming systems with MEC](articles/blockchain-based-vedio-streaming-system.md)
 

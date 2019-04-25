@@ -2,7 +2,7 @@
 description: IEEE Transactions on Wireless Communications 2018
 ---
 
-# Distributed resource allocation in blockchain-based video streaming systems with Mobile EC
+# Distributed resource allocation in blockchain-based video streaming systems with MEC
 
 {% embed url="https://ieeexplore.ieee.org/document/8574049/" %}
 
