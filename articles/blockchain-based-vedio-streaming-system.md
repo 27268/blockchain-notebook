@@ -8,7 +8,7 @@ description: IEEE Transactions on Wireless Communications 2018
 
 要点总结：
 
-
+优化转码任务在MEC中的分配策略，以追求激励的最大化。
 
 立题依据：
 
@@ -117,5 +117,11 @@ offload framework的性能分析，基于区块链的视频流系统激励机制
 
 ![&#x4F18;&#x5316;&#x76EE;&#x6807;&#xFF0C;&#x9650;&#x5B9A;&#x6761;&#x4EF6;&#x89C1;&#x8BBA;&#x6587;](../.gitbook/assets/image%20%281%29.png)
 
+这个优化是背包问题的扩展：系统总处理能力一定，如何处理更多的任务以获得最大的收益。  
+—》简化问题，并求解（alternating direction method of multipliers **ADMM**）
 
+* 自适应块大小
+* Offloading Scheduling and Resource Allocation
+* Stopping Criterion
+* Discrete Variables Recovery
 
