@@ -47,7 +47,7 @@ MEC 将计算密集型的转码任务转移到网络边缘 \[3, 18\]——MEC �
 
 ### 系统架构
 
-![&#x7CFB;&#x7EDF;&#x67B6;&#x6784;](../.gitbook/assets/image%20%289%29.png)
+![&#x7CFB;&#x7EDF;&#x67B6;&#x6784;](../.gitbook/assets/image%20%2810%29.png)
 
 1. 用户需要持有一定的token才能进入系统。
 2. user 与 SBS 的数量服从齐次泊松点过程。 直观上，只要随机事件在不相交时间区间是独立发生的，且在充分小的时间区间上只发生一次，它们的累计次数就是一个泊松过程。
@@ -65,7 +65,7 @@ TJvm被加入到block之后，the next blockhash被用来选择 完成当前bloc
 
 ### Computation offloading model
 
-![TJvm&#x4E2D;&#x7684;&#x8F6C;&#x7801;&#x4EFB;&#x52A1;](../.gitbook/assets/image%20%2818%29.png)
+![TJvm&#x4E2D;&#x7684;&#x8F6C;&#x7801;&#x4EFB;&#x52A1;](../.gitbook/assets/image%20%2821%29.png)
 
 参数分别为：size of video segment in bit, workload/intensity in CPU cycles/bit, number of video segments, length of video segment, required bitrate \(bit/s\), delay tolerance in s.
 
@@ -106,7 +106,7 @@ offload framework的性能分析，基于区块链的视频流系统激励机制
   * other rewards and punishment: the transcoding reward, fee share, slashed reward
 * the cost of transcoding service: the energy cost for the transcoding task
 
-![&#x6536;&#x76CA;](../.gitbook/assets/image%20%2836%29.png)
+![&#x6536;&#x76CA;](../.gitbook/assets/image%20%2842%29.png)
 
 为了激励更多的用户 become transcoders to perform transcoding for the broadcasters, 本文希望 transcoder能获得最大的平均转码收益 —》优化问题
 
