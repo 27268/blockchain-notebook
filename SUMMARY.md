@@ -19,4 +19,5 @@
 * [A Framework for personal data protection in the IOT](articles/pdm-framework.md)
 * [ipShield - A framework for enforcing context-aware privacy](articles/ipshield.md)
 * [Distributed resource allocation in blockchain-based video streaming systems with MEC](articles/blockchain-based-vedio-streaming-system.md)
+* [efficient privacy preserving and data sharing scheme of content-centric network in 5G](articles/privacy-and-data-sharing-in-5g.md)
 

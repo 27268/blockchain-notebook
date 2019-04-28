@@ -38,7 +38,7 @@ description: 2015 IEEE CS Security and Privacy Workshops
 
 ## 方案设计：
 
-![&#x5E73;&#x53F0;&#x6A21;&#x578B;](../.gitbook/assets/image%20%2837%29.png)
+![&#x5E73;&#x53F0;&#x6A21;&#x578B;](../.gitbook/assets/image%20%2843%29.png)
 
 * 角色
   * user: 下载与使用applications that require processing personal data
@@ -69,21 +69,21 @@ description: 2015 IEEE CS Security and Privacy Workshops
 
 生成\(user, service\)实体：
 
-![\(user, service\) identity](../.gitbook/assets/image%20%2838%29.png)
+![\(user, service\) identity](../.gitbook/assets/image%20%2844%29.png)
 
 访问权限/ policy： POLICYu, s = {location, contact}
 
 权限验证：
 
-![&#x6743;&#x9650;&#x9A8C;&#x8BC1;&#x7B56;&#x7565;](../.gitbook/assets/image%20%2825%29.png)
+![&#x6743;&#x9650;&#x9A8C;&#x8BC1;&#x7B56;&#x7565;](../.gitbook/assets/image%20%2830%29.png)
 
 Taccess处理策略：验证user身份，修改权限
 
-![&#x9A8C;&#x8BC1;user&#x8EAB;&#x4EFD;](../.gitbook/assets/image%20%2817%29.png)
+![&#x9A8C;&#x8BC1;user&#x8EAB;&#x4EFD;](../.gitbook/assets/image%20%2820%29.png)
 
 Tdata处理策略：若请求者有权限访问数据，返回数据指针，请求者可以根据指针查找数据（在根据Kad组织的P2P网络中）
 
-![&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x6307;&#x9488;](../.gitbook/assets/image%20%2834%29.png)
+![&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x6307;&#x9488;](../.gitbook/assets/image%20%2840%29.png)
 
 ### 隐私与安全分析
 
@@ -99,7 +99,7 @@ Blockchain：防篡改、节点之间无信任
 1. 目前平台保存静态加密数据，被授权的service可以访问原始数据 —— 希望service可以不访问原始数据，service的程序直接在加密数据上运行，返回计算结果。 实现方向：安全多方计算
 2. proof of work消耗大量资源、易受到女巫攻击、延迟高——基于节点行为的动态信任度量， 实现方向：统计节点的发出的good behavior and bad behavior，计算节点的可信度，更可信的节点可以享有更多的权重——可以抵抗女巫攻击，因为积累信任度需要时间，也可以对抗积累大量reputation之后再实施恶意行为的攻击（动态衡量）
 
-![&#x8282;&#x70B9;n&#x5728;block i&#x4E2D;&#x7684;&#x53EF;&#x4FE1;&#x5EA6;](../.gitbook/assets/image%20%2830%29.png)
+![&#x8282;&#x70B9;n&#x5728;block i&#x4E2D;&#x7684;&#x53EF;&#x4FE1;&#x5EA6;](../.gitbook/assets/image%20%2835%29.png)
 
 说明：图片来自论文
 
