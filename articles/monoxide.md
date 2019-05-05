@@ -113,7 +113,7 @@ Relay TX 是无条件的、无序的。
 账户/用户地址 ：a fixed hash value of its public key.  
 zone partitioning: partitions the space of user addresses into 2^k zones in a fixed and deterministic way, a zone is identified by its sharding scale k and zone index s \(s in \[0,2^k -1\]\)
 
-![zone partition](../.gitbook/assets/image%20%2847%29.png)
+![zone partition](../.gitbook/assets/image%20%2848%29.png)
 
 Block is identified with &lt;s, k, h&gt;, s: zone index, k: sharding scale, h: height of chain in the zone.
 

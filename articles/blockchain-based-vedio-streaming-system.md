@@ -106,7 +106,7 @@ offload framework的性能分析，基于区块链的视频流系统激励机制
   * other rewards and punishment: the transcoding reward, fee share, slashed reward
 * the cost of transcoding service: the energy cost for the transcoding task
 
-![&#x6536;&#x76CA;](../.gitbook/assets/image%20%2848%29.png)
+![&#x6536;&#x76CA;](../.gitbook/assets/image%20%2850%29.png)
 
 为了激励更多的用户 become transcoders to perform transcoding for the broadcasters, 本文希望 transcoder能获得最大的平均转码收益 —》优化问题
 

@@ -109,7 +109,7 @@ SensorService, LocationManagerService在Android系统boot时启动的系统服�
 * SensorType
 * Action
 
-![&#x9690;&#x79C1;&#x89C4;&#x5219;&#x7684;&#x9009;&#x9879;&#x5217;&#x8868;](../.gitbook/assets/image%20%2839%29.png)
+![&#x9690;&#x79C1;&#x89C4;&#x5219;&#x7684;&#x9009;&#x9879;&#x5217;&#x8868;](../.gitbook/assets/image%20%2840%29.png)
 
 隐私规则的一般形式：if\(contexts\), apply Action to SensorType.  
 eg：if \( \(TimeOfDay in \[10am-5pm\]\) ^ \(Place = school\) ^ \(AppName = facebook\) \), apply 'Suppress' on 'GPS'.
@@ -136,7 +136,7 @@ eg：if \( \(TimeOfDay in \[10am-5pm\]\) ^ \(Place = school\) ^ \(AppName = face
 
 记 pl in {0, ... , Pmax} 为用户设置的优先级，pl越大，优先级越高，用户越不希望被泄漏
 
-![&#x4F18;&#x5316;&#x95EE;&#x9898;](../.gitbook/assets/image%20%2842%29.png)
+![&#x4F18;&#x5316;&#x95EE;&#x9898;](../.gitbook/assets/image%20%2843%29.png)
 
 s.t. 使得，满足 such that, or subjective to。
 

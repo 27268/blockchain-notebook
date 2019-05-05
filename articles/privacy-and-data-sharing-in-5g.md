@@ -49,7 +49,7 @@ Nj: symbol of the record j
 ro: a set of roles. 允许访问：当且仅当 the visitor's label meets the requirements of the data owner，即the requestor is in the role set.  
 &lt;ts, te&gt;: time start, time end，允许访问的时间段
 
-![acp&#x793A;&#x4F8B;](../.gitbook/assets/image%20%2838%29.png)
+![acp&#x793A;&#x4F8B;](../.gitbook/assets/image%20%2839%29.png)
 
 acp1：若 user1 是 user2 的朋友，user1 可以在任意时间访问 user2 的任意信息  
 acp2：任意user1都可以在 &lt;ts, te&gt; 时间中，访问 user2 的 N3 数据  

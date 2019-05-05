@@ -38,7 +38,7 @@ description: 2015 IEEE CS Security and Privacy Workshops
 
 ## 方案设计：
 
-![&#x5E73;&#x53F0;&#x6A21;&#x578B;](../.gitbook/assets/image%20%2843%29.png)
+![&#x5E73;&#x53F0;&#x6A21;&#x578B;](../.gitbook/assets/image%20%2844%29.png)
 
 * 角色
   * user: 下载与使用applications that require processing personal data
@@ -69,7 +69,7 @@ description: 2015 IEEE CS Security and Privacy Workshops
 
 生成\(user, service\)实体：
 
-![\(user, service\) identity](../.gitbook/assets/image%20%2844%29.png)
+![\(user, service\) identity](../.gitbook/assets/image%20%2845%29.png)
 
 访问权限/ policy： POLICYu, s = {location, contact}
 
@@ -83,7 +83,7 @@ Taccess处理策略：验证user身份，修改权限
 
 Tdata处理策略：若请求者有权限访问数据，返回数据指针，请求者可以根据指针查找数据（在根据Kad组织的P2P网络中）
 
-![&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x6307;&#x9488;](../.gitbook/assets/image%20%2840%29.png)
+![&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x6307;&#x9488;](../.gitbook/assets/image%20%2841%29.png)
 
 ### 隐私与安全分析
 
