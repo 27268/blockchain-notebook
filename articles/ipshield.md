@@ -53,11 +53,11 @@ inference privacy attack与side-channel attack的区别：
 
 #### 相关工作
 
-![&#x76F8;&#x5173;&#x5DE5;&#x4F5C;](../.gitbook/assets/image%20%2829%29.png)
+![&#x76F8;&#x5173;&#x5DE5;&#x4F5C;](../.gitbook/assets/image%20%2830%29.png)
 
 #### android的传感器数据流路径和安全模型
 
-![android &#x4F20;&#x611F;&#x5668;&#x6570;&#x636E;&#x6D41;&#x6A21;&#x578B;](../.gitbook/assets/image%20%2832%29.png)
+![android &#x4F20;&#x611F;&#x5668;&#x6570;&#x636E;&#x6D41;&#x6A21;&#x578B;](../.gitbook/assets/image%20%2833%29.png)
 
 数据流：
 
@@ -80,13 +80,13 @@ SensorService, LocationManagerService在Android系统boot时启动的系统服�
 
 ### 系统模块
 
-![ipShield &#x6570;&#x636E;&#x6D41;](../.gitbook/assets/image%20%2819%29.png)
+![ipShield &#x6570;&#x636E;&#x6D41;](../.gitbook/assets/image%20%2820%29.png)
 
 * 数据库
   * sensor counter and database \(F\): 操作系统监控应用访问传感器的次数，安装新应用或者卸载应用时，更新数据库。
   * **inference database \(E\)** : map the list of **inference categories** and their labels. Inference categories can be predicted using a combination of sensors, the prediction accuracy and the ML algorithm. —— 与杀毒软件公司维护的病毒库类似
 
-![inference DB](../.gitbook/assets/image%20%2831%29.png)
+![inference DB](../.gitbook/assets/image%20%2832%29.png)
 
 * 上下文引擎 context engine \(D\) : 一组机器学习算法，将原始传感器数据作为输入，output the current context label. context label 与 inference label相同，区别在于：inference label是对手通过shared data推理得到的。用户可以通过配置privacy rules 触发context label.
 * firewall-manager: 与用户交互，并生成privacy rules。
@@ -109,7 +109,7 @@ SensorService, LocationManagerService在Android系统boot时启动的系统服�
 * SensorType
 * Action
 
-![&#x9690;&#x79C1;&#x89C4;&#x5219;&#x7684;&#x9009;&#x9879;&#x5217;&#x8868;](../.gitbook/assets/image%20%2840%29.png)
+![&#x9690;&#x79C1;&#x89C4;&#x5219;&#x7684;&#x9009;&#x9879;&#x5217;&#x8868;](../.gitbook/assets/image%20%2841%29.png)
 
 隐私规则的一般形式：if\(contexts\), apply Action to SensorType.  
 eg：if \( \(TimeOfDay in \[10am-5pm\]\) ^ \(Place = school\) ^ \(AppName = facebook\) \), apply 'Suppress' on 'GPS'.
@@ -136,7 +136,7 @@ eg：if \( \(TimeOfDay in \[10am-5pm\]\) ^ \(Place = school\) ^ \(AppName = face
 
 记 pl in {0, ... , Pmax} 为用户设置的优先级，pl越大，优先级越高，用户越不希望被泄漏
 
-![&#x4F18;&#x5316;&#x95EE;&#x9898;](../.gitbook/assets/image%20%2843%29.png)
+![&#x4F18;&#x5316;&#x95EE;&#x9898;](../.gitbook/assets/image%20%2844%29.png)
 
 s.t. 使得，满足 such that, or subjective to。
 

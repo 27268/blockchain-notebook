@@ -54,14 +54,14 @@ POW不需要确定参与者人数，POW比拜占庭更通用，解决的是完�
 其中，blockInterval 不是随便选择的，要能使 block 在网络之中充分传播。即 block 在网络中充分传播之后才能出下一个 block。  
 单个节点的最大吞吐量：\( average internet bandwidth \) / \( average transaction size \)。若超过这个值，block在网络中无法得到充分传播，就容易出现分叉。
 
-![&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;](../.gitbook/assets/image%20%2824%29.png)
+![&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;](../.gitbook/assets/image%20%2825%29.png)
 
 lower hash difficulty  
 --&gt; less block interval   
 --&gt;  not fully broadcast \(跟不上节奏的全节点\)   
 --&gt; higher fork rate 
 
-![POS+PBFT](../.gitbook/assets/image%20%2834%29.png)
+![POS+PBFT](../.gitbook/assets/image%20%2835%29.png)
 
 lower epoch time --&gt; higher failure rate
 
@@ -103,7 +103,7 @@ deposit operation
         3. \(默认由2中的矿工\)创建relay transaction，并转发到zone B，  
         4. 矿工将relay transaction添加到 block \(for zone B \)中
 
-![&#x8F6C;&#x8D26;&#x8FC7;&#x7A0B;](../.gitbook/assets/image%20%2833%29.png)
+![&#x8F6C;&#x8D26;&#x8FC7;&#x7A0B;](../.gitbook/assets/image%20%2834%29.png)
 
 在上述过程中，initiate TX 是有条件的 \(Alice.balance &gt; x \)，有顺序的（交易顺序影响交易执行结果）  
 Relay TX 是无条件的、无序的。
@@ -113,7 +113,7 @@ Relay TX 是无条件的、无序的。
 账户/用户地址 ：a fixed hash value of its public key.  
 zone partitioning: partitions the space of user addresses into 2^k zones in a fixed and deterministic way, a zone is identified by its sharding scale k and zone index s \(s in \[0,2^k -1\]\)
 
-![zone partition](../.gitbook/assets/image%20%2848%29.png)
+![zone partition](../.gitbook/assets/image%20%2849%29.png)
 
 Block is identified with &lt;s, k, h&gt;, s: zone index, k: sharding scale, h: height of chain in the zone.
 
@@ -128,7 +128,7 @@ Block is identified with &lt;s, k, h&gt;, s: zone index, k: sharding scale, h: h
 * chaining-block for the chain formation and POW verification
 * transaction-block carrying actual confirmed transactions
 
-![chaining-block &#x4E0E; transaction-block &#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2815%29.png)
+![chaining-block &#x4E0E; transaction-block &#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2816%29.png)
 
 属性说明：
 

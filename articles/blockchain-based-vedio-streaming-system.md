@@ -65,7 +65,7 @@ TJvm被加入到block之后，the next blockhash被用来选择 完成当前bloc
 
 ### Computation offloading model
 
-![TJvm&#x4E2D;&#x7684;&#x8F6C;&#x7801;&#x4EFB;&#x52A1;](../.gitbook/assets/image%20%2825%29.png)
+![TJvm&#x4E2D;&#x7684;&#x8F6C;&#x7801;&#x4EFB;&#x52A1;](../.gitbook/assets/image%20%2826%29.png)
 
 参数分别为：size of video segment in bit, workload/intensity in CPU cycles/bit, number of video segments, length of video segment, required bitrate \(bit/s\), delay tolerance in s.
 
@@ -106,7 +106,7 @@ offload framework的性能分析，基于区块链的视频流系统激励机制
   * other rewards and punishment: the transcoding reward, fee share, slashed reward
 * the cost of transcoding service: the energy cost for the transcoding task
 
-![&#x6536;&#x76CA;](../.gitbook/assets/image%20%2850%29.png)
+![&#x6536;&#x76CA;](../.gitbook/assets/image%20%2851%29.png)
 
 为了激励更多的用户 become transcoders to perform transcoding for the broadcasters, 本文希望 transcoder能获得最大的平均转码收益 —》优化问题
 

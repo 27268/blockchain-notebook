@@ -32,3 +32,7 @@ description: 目录
 
 {% page-ref page="articles/blockchain-based-vedio-streaming-system.md" %}
 
+{% page-ref page="articles/privacy-and-data-sharing-in-5g.md" %}
+
+{% page-ref page="articles/analysis-of-dag-based-blockchain.md" %}
+

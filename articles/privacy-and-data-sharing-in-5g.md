@@ -29,7 +29,7 @@ description: 'the institution of engineering and technology, 2018'
 
 ## 系统设计
 
-![&#x7CFB;&#x7EDF;&#x67B6;&#x6784;](../.gitbook/assets/image%20%2821%29.png)
+![&#x7CFB;&#x7EDF;&#x67B6;&#x6784;](../.gitbook/assets/image%20%2822%29.png)
 
 * content provider
 * social user community
@@ -49,7 +49,7 @@ Nj: symbol of the record j
 ro: a set of roles. 允许访问：当且仅当 the visitor's label meets the requirements of the data owner，即the requestor is in the role set.  
 &lt;ts, te&gt;: time start, time end，允许访问的时间段
 
-![acp&#x793A;&#x4F8B;](../.gitbook/assets/image%20%2839%29.png)
+![acp&#x793A;&#x4F8B;](../.gitbook/assets/image%20%2840%29.png)
 
 acp1：若 user1 是 user2 的朋友，user1 可以在任意时间访问 user2 的任意信息  
 acp2：任意user1都可以在 &lt;ts, te&gt; 时间中，访问 user2 的 N3 数据  
@@ -73,7 +73,7 @@ Common users are divided into groups according to their interests. 不同组的u
 
 ### blockchain ledger
 
-![block&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2826%29.png)
+![block&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2827%29.png)
 
 hash: sha256  
 pointer of record: 信息存储的地址  

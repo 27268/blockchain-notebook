@@ -25,7 +25,7 @@ description: >-
    5. Byteball
    6. Nano
 
-![&#x4F20;&#x7EDF;&#x533A;&#x5757;&#x94FE;&#x4E0E;&#x57FA;&#x4E8E;DAG&#x7684;&#x533A;&#x5757;&#x94FE;&#x5BF9;&#x6BD4;](../.gitbook/assets/image%20%2849%29.png)
+![&#x4F20;&#x7EDF;&#x533A;&#x5757;&#x94FE;&#x4E0E;&#x57FA;&#x4E8E;DAG&#x7684;&#x533A;&#x5757;&#x94FE;&#x5BF9;&#x6BD4;](../.gitbook/assets/image%20%2850%29.png)
 
 ### NXT
 

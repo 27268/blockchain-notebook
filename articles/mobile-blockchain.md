@@ -56,7 +56,7 @@ M\(X\) - mobile node, X in {A, B, C, D, E}, S\(Y\) - service node, Y in {F, G, H
 3. S\(F\)中的同步网关将transaction广播到网络中的所有在线节点，即M\(B\), M\(C\), M\(D\).
 4. M\(E\)重新上线后，首先更新和同步当前区块链和pending tasks.
 
-![mining process](../.gitbook/assets/image%20%2817%29.png)
+![mining process](../.gitbook/assets/image%20%2818%29.png)
 
 ### 挖矿过程
 
@@ -75,9 +75,9 @@ M\(X\) - mobile node, X in {A, B, C, D, E}, S\(Y\) - service node, Y in {F, G, H
   * 数据库：嵌入式JSON数据库 Coushbase Lite，适用于实时系统
   * Coushbase Sync Gateway
 
-![account&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2846%29.png)
+![account&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2847%29.png)
 
-![transaction&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2838%29.png)
+![transaction&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%2839%29.png)
 
 ![block&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;](../.gitbook/assets/image%20%285%29.png)
 
