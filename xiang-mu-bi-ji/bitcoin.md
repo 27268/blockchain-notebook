@@ -58,6 +58,10 @@ block大小，block的验证
 
 #### 标准交易
 
+### 微支付通道
+
+关键点：locktime
+
 ### 链下交易
 
 ## Contract
