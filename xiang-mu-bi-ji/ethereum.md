@@ -27,7 +27,22 @@ TransactionExecutor.create\(\) -&gt;
 
 ### blockchian
 
+主链：the path that has had the most computation done on it.
+
+最大计算量的评价标准：
+
+* 最长链
+* total difficulty
+
 #### 叔块 GHOST协议
+
+{% embed url="https://yq.aliyun.com/articles/679583" %}
+
+EIP-150版的黄皮书中，叔块仅参与奖励；后续的改进中，叔块也参与total difficulty的计算；最新版中，以最多子树数目最多为原则。
+
+{% embed url="https://blog.csdn.net/canhui\_wang/article/details/54916447" %}
+
+
 
 #### 数据结构与编码
 
